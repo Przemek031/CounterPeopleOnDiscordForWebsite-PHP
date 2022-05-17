@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+header( "refresh:300;" ); 
+echo "<META http-equiv='Content-Type' content='text/html; charset=UTF-8'>";
+$discord = json_decode(file_get_contents('#Link to json your discord#'));
+$array_countall = count($discord->members); 
+$sum_total = $array_countall - $mn  
+?>
+<?php echo  '&nbsp;&nbsp;'; echo  $array_countall - $mn; ?>           
+</body>
+</html>
